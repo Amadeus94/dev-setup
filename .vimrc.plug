@@ -1,0 +1,12 @@
+call plug#begin('~/.vim/plugged')
+
+"Fugitive Vim Github Wrapper
+Plug 'tpope/vim-fugitive'
+
+Plug 'tomasiser/vim-code-dark' "visual code color scheme
+
+Plug 'ycm-core/YouCompleteMe'
+
+Plug 'ctrlpvim/ctrlp.vim'
+
+call plug#end()
