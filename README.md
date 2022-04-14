@@ -1,1 +1,3 @@
 # dev-setup
+## VIM
+## TMUX
