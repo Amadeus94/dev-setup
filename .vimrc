@@ -25,8 +25,6 @@ endif
 
 
 
-
-
 colorscheme codedark
 
 
@@ -85,3 +83,26 @@ set ttimeoutlen=0 "wait 0 ms after esc for special key
 "		vimrc file
 "		Creates a basic setup with set numbers etc. 
 "		Also very useful installation guide for plugins and so on
+"
+"
+set tabstop=4
+
+
+set showmatch " Shows matching brackets
+set ruler " Always shows location in file (line#)
+set smarttab " Autotabs for certain code
+set shiftwidth=4
+
+"Allows you to hit right to auto complete and left to avoid autocomplete
+
+"inoremap <expr> <Down> pumvisible() ? "(C-n)" : "<Down>"
+"inoremap <expr> <Up> pumvisible() ? "(C-p)" : "<Up>"
+
+"inoremap <expr> <Right> pumvisible() ? "C-y)" : "<Right>"
+"inoremap <expr> <CR> pumvisible() ? "(C-y)" : "<CR>"
+"
+"inoremap <expr> <Left> pumvisible() ? "(C-e)" : "<Left>"
+
+
+
+" TODO:  			Enable Enter as selection in autocompleteme
