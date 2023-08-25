@@ -106,3 +106,11 @@ set shiftwidth=4
 
 
 " TODO:  			Enable Enter as selection in autocompleteme
+"
+"
+" TODO:  			Enable Enter as selection in autocompleteme
+"
+
+" Enable ctrl+c from linux subsystem 
+vnoremap <C-c> y:!echo <C-r>=escape(substitute(shellescape(getreg('"')), '\n', '\r', 'g'), '#%!')<CR> <Bar> clip.exe<CR><CR>
+
