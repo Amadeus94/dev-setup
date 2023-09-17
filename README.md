@@ -1,7 +1,7 @@
 # Vim and Tmux Configuration Setup
 
 
-#Pre requisites 
+## Pre requisites 
 Install Vim Plugin Manager such as the one here:
 
 ```
@@ -11,7 +11,7 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
 
-#installation
+## Installation
 
 ```
 cd vim-tmux-setup
@@ -20,8 +20,9 @@ ln -s $(pwd)/.vimrc ~/.vimrc
 ln -s $(pwd)/.vimrc.plug ~/.vimrc.plug
 ```
 
+By creating symbolic links for these configuration files, you can easily manage and update your Vim and tmux setups from a central location (vim-tmux-setup directory) without having to replace or edit the files in their default locations. This makes it easier to keep configurations synchronized across different systems or to version-control them.
 
-# Add new Vim Plugins
+## Adding additional Vim Plugins
 All plugins are located in the .vimrc.plug file with the following format: 
 
 
@@ -31,28 +32,28 @@ Plug 'repository/name'
 call plug#end()
 ```
 
-# Install Plugins
+### Install Plugins
 Go into vim and use the `:PlugInstall` command.
 
-#Vim Configs
+## Vim Configs
 
-## General Configs
+### General Configs
 - Enabled `set numbers`
 - Enabled `syntax enable`
 - set background to dark `set background=dark`
 
-## Editing Configs
+### Editing Configs
 - Set the tab width to 4 spaces with `set tabstop=4`.
 - Enabled auto-indentation with `set smartindent`.
 - Enabled line wrapping with `set wrap`.
 
-## Plugins
+### Plugins
 - Configured Vim-Plug for plugin management (call `plug#begin('~/.vim/plugged')` and `call plug#end()`).
 - Installed `jiangmiao/auto-pairs` for auto-closing brackets and quotes.
 - Installed `scrooloose/nerdtree` for a tree explorer.
 - Installed `preservim/nerdcommenter` for easy code commenting.
 
-#Tmux Configs
+## Tmux Configs
 - **Prefix Key**: Changed the prefix key from the default `Ctrl-b` to `Ctrl-a` for better accessibility.
 - **Vim-like Navigation**: Enables Vim-like navigation. For example, `Ctrl-a k` will select the pane above, and `Ctrl-a j` will select the pane below.
 - **Pane Navigation**: Configured pane navigation to use `Alt + arrow keys` instead of the `default prefix + arrow keys` for easier maneuverability.
