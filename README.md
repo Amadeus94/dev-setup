@@ -12,6 +12,7 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
 ## Installation
+Navigate to the dev-setup directory and create symbolic links to configuration files:
 
 ```
 cd vim-tmux-setup
@@ -20,7 +21,7 @@ ln -s $(pwd)/.vimrc ~/.vimrc
 ln -s $(pwd)/.vimrc.plug ~/.vimrc.plug
 ```
 
-By creating symbolic links for these configuration files, you can easily manage and update your Vim and tmux setups from a central location (vim-tmux-setup directory) without having to replace or edit the files in their default locations. This makes it easier to keep configurations synchronized across different systems or to version-control them.
+By creating symbolic links for these configuration files, you can easily manage and update your Vim and tmux setups from a central location (dev-setup directory) without having to replace or edit the files in their default locations. This makes it easier to keep configurations synchronized across different systems or to version-control them.
 
 ## Adding additional Vim Plugins
 All plugins are located in the .vimrc.plug file with the following format: 
