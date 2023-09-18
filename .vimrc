@@ -114,3 +114,5 @@ set shiftwidth=4
 " Enable ctrl+c from linux subsystem 
 vnoremap <C-c> y:!echo <C-r>=escape(substitute(shellescape(getreg('"')), '\n', '\r', 'g'), '#%!')<CR> <Bar> clip.exe<CR><CR>
 
+" Disable annoying bell in Vim
+set visualbell
